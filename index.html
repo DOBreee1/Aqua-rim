@@ -149,11 +149,18 @@
             <img src="assets/images/bar-box.png" alt="" onclick="scrollToComments(2)">
             <img src="assets/images/bar-box.png" alt="" onclick="scrollToComments(3)">
             <img src="assets/images/bar-box.png" alt="" onclick="scrollToComments(4)">
+            <button onclick="showSecondComment()">Показати другий відгук</button>
         </div>
+
         <script>
-            function scrollToComment(commentId) {
-                var comment = document.getElementById(commentId);
-                comment.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // JavaScript код тут
+            function showSecondComment() {
+                // Знайдемо перший і другий відгуки за їх id
+                var firstComment = document.getElementById('comment1');
+                var secondComment = document.getElementById('comment2');
+        
+                // Змінимо стиль другого відгука на block, щоб він став видимим
+                secondComment.style.display = 'block';
             }
         </script>
    </section>
@@ -276,7 +283,6 @@
             <div class="footer-content">
                 <div class="footer-map">
                     <iframe src="assets/images/baseyni.jpeg" width="856" height="604" frameborder="0"></iframe>
-                    <iframe src="assets/images/b.webp" width="856" height="604" frameborder="0"></iframe>
                 </div>
                
 
